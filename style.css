@@ -1,0 +1,87 @@
+#snakeGame{
+    width: max-content;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px black;
+    padding: 10px;
+    margin: auto;
+}
+
+/* game container */
+#gameContainer{
+    box-sizing: border-box;
+    background-color: rgb(0, 26, 255);
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(40, 1fr);
+    position: relative;
+}
+.pixel{
+    background-color: black;
+}
+
+/* score board */
+.scoreBoard{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+/* food */
+.food{
+    height: 10px;
+    width: 10px;
+    box-shadow: 0px 0px 0px 5px rgba(238, 95, 95, 0.301);
+    background-color: rgb(0, 89, 255);
+    border-radius: 50%;
+
+    position: absolute;
+}
+
+/* snake */
+.snakeBodyPixel{
+    height: 10px;
+    width: 10px;
+    /* background-color: rgb(60, 255, 0); */
+    background-image: linear-gradient(red, yellow);
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+}
+
+/* game over */
+#gameOver{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(36, 1, 82, 0.363);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 6rem;
+    text-shadow: 0px 0px 10px rgb(0, 52, 77);
+}
+/* #startNew{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
+    cursor: pointer;
+}
+#startNew:hover{
+    background-color: rgb(0, 95, 0);
+    color: rgb(189, 189, 189);
+}
+#startNew:active{
+    background-color: green;
+    color: white;
+    box-shadow: none;
+} */
